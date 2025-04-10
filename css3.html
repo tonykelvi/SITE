@@ -6,6 +6,29 @@
     <title>CSS3</title>
     <link rel="shortcut icon" href="./img/icon.png" type="image/x-icon">
     <link rel="stylesheet" href="./css/style.css">
+    <style>
+        h2{
+            margin: 1em;
+            color: #0077FF;
+            text-align: center;
+        }
+        /*precisa conserta, as colunas ficaram tortas. Talvez seja melhor usar flexbox */
+        ul{
+            columns: 2;
+        }
+       li{
+        margin: 0.7em 0;
+        text-align: left;
+       }
+       a{
+        color: #E5E5E5;
+        font-size: 16px;
+       }
+       .alinhando-texto{
+        padding-top: 5em;
+        text-align: center;
+       }
+    </style>
 </head>
 <body>
     <header>
@@ -17,10 +40,32 @@
         </nav>
     </header>
     <main>
-        
+        <h1>CSS3 - Seu site cheio de estilo</h1>
+        <p>Vai encontrar dicas muito utéis na hora de aplicar estilo ao seu site!</p>
+        <article class="apresetacao">
+            <img src="./img/logo-css3.png" alt="">
+            <p>
+                O CSS3 é a versão mais recente do Cascading Style Sheets, uma linguagem de estilo utilizada para definir a aparência de páginas web. Ele oferece novos recursos e funcionalidades, como animações, transições, sombras, gradientes, e layout flexível (Flexbox e Grid). Esses avanços permitem uma maior personalização e interatividade nas páginas, além de melhorar a responsividade e o design adaptativo. O CSS3 é fundamental para o desenvolvimento moderno de sites, proporcionando uma experiência visual mais rica e dinâmica.
+            </p>
+        </article>
+        <article>
+            <h2>↓ O vai encontrar de conteudo nesse site ↓</h2>
+            <ul>
+                <li><a href="#">Seletores: permitem aplicar estilos a elementos específicos.</a> </li>
+                <li><a href="#">Cores, fontes e espaçamento: personalizam a aparência visual.</a></li>
+                <li><a href="#">Box Model: define margens, bordas, preenchimento e conteúdo dos elementos.</a></li>
+                <li><a href="#">Flexbox e Grid: facilitam a criação de layouts responsivos.</a></li>
+                <li><a href="#">Media Queries: adaptam o estilo a diferentes tamanhos de tela.</a></li>
+                <li><a href="#">Transições e animações: adicionam interatividade e efeitos visuais.</a></li>
+            </ul>
+            <p class="alinhando-texto">Esses recursos tornam o CSS essencial para criar sites modernos, bonitos e funcionais.</p>
+        </article>
+                
     </main>
     <footer>
         <p>© 2025 <a href="https://github.com/tonykelvi">Tony Kelvi</a>. Todos os direitos reservados.</p>
     </footer>    
 </body>
 </html>
+
+

@@ -46,6 +46,42 @@ body{
 }
 
 /*#################################################
+############### { GLOBAL } ########################
+#################################################*/
+h1{
+    color: var(--cor-cianoNeon);
+    font-family: var(--font-orbitron);
+    font-size: 1.9em;
+    font-weight: 400;;
+}
+h2{
+
+}
+p{
+    font-family: var(--font-inter);
+    font-size: 1em;
+    font-weight: 200;
+    color: var(--cor-cinzaClaro);
+}
+ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+li{
+
+}
+a{
+    color: var(--cor-roxoNeon);
+    text-decoration: none;
+}
+a:hover{
+    color: var(--cor-azulEletrico);
+    text-decoration: none;
+    transition-duration: 0.3s;
+}
+
+/*#################################################
 ############### { HEADER } ########################
 #################################################*/
 header{
@@ -97,7 +133,19 @@ main{
     font-size: 1em;
     font-weight: normal;
     color: var(--cor-cinzaClaro);
+    padding-left: 5em;
+    padding-top: 3em;
+}
 
+.apresetacao{
+    display: flex;
+    align-items: center;
+    text-align: justify;
+    margin: auto;
+    padding-right: 6em;
+    font-weight: 100;
+    font-size: 1.5em;
+    padding-bottom: 5em;
 }
 
 /*#################################################
