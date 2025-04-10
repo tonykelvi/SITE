@@ -40,6 +40,7 @@ body{
     height: 100vh;
     background-color: var(--cor-azulNoturno);
     font-family: var(--font-inter);
+    color: var(--cor-cinzaClaro);
 }
 
 /*#################################################
@@ -84,4 +85,37 @@ nav li a:hover{
     color: var(--cor-azulEletrico);
     text-decoration: none;
     transition-duration: 0.3s;
+}
+/*#################################################
+################# { MAIN } #########################
+#################################################*/
+main{
+    font-family: var(--font-inter);
+    font-size: 1em;
+    font-weight: normal;
+    color: var(--cor-cinzaClaro);
+
+}
+
+/*#################################################
+################# { FOOTER } ######################
+#################################################*/
+footer{
+    background-color: var(--cor-azulPreto);
+    padding: 0.7em;
+}
+footer p{
+    margin: auto;
+    text-align: center;
+    font-family: var(--font-inter);
+    color: var(--cor-cinzaClaro);
+}
+footer a {
+    font-family: var(--font-inter);
+    color: var(--cor-cinzaClaro);
+    text-decoration: none;
+}
+footer a:hover{
+    color: var(--cor-roxoNeon);
+    text-shadow: 0 0 4px var(--cor-roxoNeon);
 }
