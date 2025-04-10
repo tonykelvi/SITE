@@ -37,7 +37,9 @@
 ############### { BODY } ########################
 #################################################*/
 body{
-    height: 100vh;
+    display: flex; /*Quando você usa display: flex em um container, o Flexbox entra em ação. Ele organiza os elementos filhos (ou seja, os elementos dentro daquele container) em uma direção específica*/
+    flex-direction: column; /*Alinha os filhos na vertical (de cima para baixo)	*/
+    height: 100vh; /* 100% da altura da tela */
     background-color: var(--cor-azulNoturno);
     font-family: var(--font-inter);
     color: var(--cor-cinzaClaro);
@@ -90,6 +92,7 @@ nav li a:hover{
 ################# { MAIN } #########################
 #################################################*/
 main{
+    flex:1; /* Faz o conteúdo crescer e empurrar o footer para baixo */
     font-family: var(--font-inter);
     font-size: 1em;
     font-weight: normal;
@@ -109,6 +112,8 @@ footer p{
     text-align: center;
     font-family: var(--font-inter);
     color: var(--cor-cinzaClaro);
+    font-size: 0.9em;
+    font-weight: 100;
 }
 footer a {
     font-family: var(--font-inter);
