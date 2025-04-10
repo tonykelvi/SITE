@@ -1,0 +1,87 @@
+@charset "UTF-8";
+
+/*#################################################
+############### { IMPORT FONTS } ##################
+#################################################*/
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Orbitron:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/*#################################################
+############### { RESET } #########################
+#################################################*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*#################################################
+############### { VARIAVEIS CSS } #################
+#################################################*/
+:root{
+    --font-inter: 'Inter', sans-serif; /*Parágrafos: Inter*/
+    --font-orbitron: 'Orbitron', sans-serif; /*Título Principal: Orbitron*/
+    --font-poppins: 'Poppins', sans-serif; /*Títulos Secundários Poppins*/
+
+    /*Paleta Completa – Tech Azul Neon (Futurista/Moderna) */
+
+    --cor-cianoNeon:  #00FFFF; /* Primária - Botões, links em destaque, ícones ativos */
+    --cor-azulEletrico:  #0077FF; /*Secundária- Hover, botões secundários, barras de progresso*/
+    --cor-azulPreto: #0A0F1C; /*Fundo 1 - Cor de fundo principal*/
+    --cor-azulNoturno: #101820; /*Fundo 2 - Alternativa para seções ou blocos de conteúdo*/
+    --cor-cinzaClaro: #E5E5E5; /*Texto Claro - Texto padrão sobre fundo escuro*/
+    --cor-roxoNeon: #9D00FF; /*Destaque - Acentos, botões importantes, efeitos de glow*/
+    --cor-cinzaDeep: #1C1C1C; /*Para bordas suaves e separadores*/
+}
+
+/*#################################################
+############### { BODY } ########################
+#################################################*/
+body{
+    height: 100vh;
+    background-color: var(--cor-azulNoturno);
+    font-family: var(--font-inter);
+}
+
+/*#################################################
+############### { HEADER } ########################
+#################################################*/
+header{
+    background-color: var(--cor-azulPreto);
+    color: var(--cor-cianoNeon);
+    text-align: center;
+    font-family: var(--font-orbitron);
+    font-weight: 400;
+}
+header > h1{
+    font-size: 2.5em;
+    padding: 1.5em 0px 0.5em 0px;
+}
+header > p{
+    font-size: 1em;
+    padding-bottom: 0.7em;
+    font-weight: 100;
+}
+/*#################################################
+################# { NAV } #########################
+#################################################*/
+nav{
+    margin-top: 1em;
+    padding-bottom: 1em;
+}
+nav ul {
+    display: flex; /*Aplicar na lista, pois senão ela continua se comportando como uma lista vertical por padrão*/
+    justify-content: center;
+    gap: 2em; /* Espaçamento entre os itens */
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+nav li a{
+    color: var(--cor-roxoNeon);
+    text-decoration: none;
+}
+nav li a:hover{
+    color: var(--cor-azulEletrico);
+    text-decoration: none;
+    transition-duration: 0.3s;
+}
