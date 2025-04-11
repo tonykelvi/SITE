@@ -52,10 +52,13 @@ h1{
     color: var(--cor-cianoNeon);
     font-family: var(--font-orbitron);
     font-size: 1.9em;
-    font-weight: 400;;
+    font-weight: 400;
 }
 h2{
-
+    color: var(--cor-cianoNeon);
+    font-family: var(--font-poppins);
+    font-size: 1.5em;
+    font-weight: 400;
 }
 p{
     font-family: var(--font-inter);
