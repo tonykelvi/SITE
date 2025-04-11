@@ -43,6 +43,8 @@ body{
     background-color: var(--cor-azulNoturno);
     font-family: var(--font-inter);
     color: var(--cor-cinzaClaro);
+    max-width: 100%;
+    min-width: 300px;
 }
 
 /*#################################################
@@ -55,7 +57,7 @@ h1{
     font-weight: 400;
 }
 h2{
-    color: var(--cor-cianoNeon);
+    color: var(--cor-cinzaDeep);
     font-family: var(--font-poppins);
     font-size: 1.5em;
     font-weight: 400;
@@ -72,7 +74,7 @@ ul{
     list-style: none;
 }
 li{
-
+    text-align: justify;
 }
 a{
     color: var(--cor-roxoNeon);
