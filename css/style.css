@@ -80,6 +80,10 @@ a:hover{
     text-decoration: none;
     transition-duration: 0.3s;
 }
+img{
+    max-width: 600px;
+    min-width: 200px;
+}
 
 /*#################################################
 ############### { HEADER } ########################
