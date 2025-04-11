@@ -39,7 +39,7 @@
 body{
     display: flex; /*Quando você usa display: flex em um container, o Flexbox entra em ação. Ele organiza os elementos filhos (ou seja, os elementos dentro daquele container) em uma direção específica*/
     flex-direction: column; /*Alinha os filhos na vertical (de cima para baixo)	*/
-    height: 100vh; /* 100% da altura da tela */
+    height: 100dvh; /* 100% da altura da tela */
     background-color: var(--cor-azulNoturno);
     font-family: var(--font-inter);
     color: var(--cor-cinzaClaro);
