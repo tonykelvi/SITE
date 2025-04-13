@@ -12,6 +12,8 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+
 }
 
 /*#################################################
@@ -36,15 +38,17 @@
 /*#################################################
 ############### { BODY } ########################
 #################################################*/
+html, body {
+    overflow-x: hidden; /* controla o que acontece quando o conteúdo é maior que a largura da tela (eixo horizontal).*/
+}
+
 body{
     display: flex; /*Quando você usa display: flex em um container, o Flexbox entra em ação. Ele organiza os elementos filhos (ou seja, os elementos dentro daquele container) em uma direção específica*/
     flex-direction: column; /*Alinha os filhos na vertical (de cima para baixo)	*/
-    height: 100dvh; /* 100% da altura da tela */
+    height: 100vh; /* 100% da altura da tela */
     background-color: var(--cor-azulNoturno);
     font-family: var(--font-inter);
     color: var(--cor-cinzaClaro);
-    max-width: 100%;
-    min-width: 300px;
 }
 
 /*#################################################
@@ -69,8 +73,8 @@ p{
     color: var(--cor-cinzaClaro);
 }
 ul{
-    padding: 0;
     margin: 0;
+    padding: 0;
     list-style: none;
 }
 li{
