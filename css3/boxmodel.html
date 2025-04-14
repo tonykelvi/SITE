@@ -5,6 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Box Model</title>
     <link rel="stylesheet" href="../css/style.css">
+    <style>
+        ul{
+            padding: 10px;
+        }
+        li{
+            padding: 10px;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -23,19 +31,32 @@
                 O Box Model é a forma como o CSS representa visualmente todos os elementos HTML. Cada elemento é visto como uma caixa retangular composta por quatro camadas principais.
             </p>
             <h2>Estrutura do Box Model (de fora para dentro)</h2>
-            <img src="../css3/img-css3/boxmodel01.webp" alt="">
+            <img src="../css3/img-css3/box_model.png" alt="">
             <h3>Margin</h3>
             <ul>
                 <li>Espaço externo da caixa</li>
                 <li>Separa o elemento de outros elementos</li>
                 <li>Exemplo: <pre>margin: 10px;</pre></li>
             </ul>
+            <p>A propriedade margin no CSS é usada para criar espaçamento externo ao redor de elementos HTML. Ela define o espaço entre a borda de um elemento e os elementos ao seu redor, ajudando a controlar o layout e o posicionamento dos elementos na página.
+            </p>
             <h3>Border</h3>
             <ul>
                 <li>Linha que envolve o padding e o conteúdo</li>
                 <li>Pode ter cor, estilo e espessura</li>
                 <li>Exemplo: <pre>border: 2px solid black;</pre></li>
             </ul>
+            <p>A propriedade border no CSS é usada para criar bordas ao redor de elementos HTML. Ela permite definir a largura, estilo e cor da borda de um elemento, ajudando tanto no design visual quanto na separação de seções da página.</p>
+            <p>Estilos de borda mais comuns</p>
+            <ul>
+                <li>solid → linha sólida</li>
+                <li>dashed → linha tracejada</li>
+                <li>dotted → linha pontilhada</li>
+                <li>double → duas linhas sólidas</li>
+                <li>none → sem borda</li>
+                <li>groove, ridge, inset, outset → estilos com efeitos 3D</li>
+            </ul>
+            <p>Bordas arredondadas com border-radius. Essa propriedade arredonda os cantos do elemento.<pre>border-radius: 10px;</pre></p>
             <h3>Padding</h3>
             <ul>
                 <li>Espaço interno entre o conteúdo e a borda</li>

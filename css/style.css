@@ -33,6 +33,9 @@
     --cor-cinzaClaro: #E5E5E5; /*Texto Claro - Texto padrão sobre fundo escuro*/
     --cor-roxoNeon: #9D00FF; /*Destaque - Acentos, botões importantes, efeitos de glow*/
     --cor-cinzaDeep: #1C1C1C; /*Para bordas suaves e separadores*/
+     --cor-brancoNeve: #F8F8FF; /*Para títulos principais. Dá um ar moderno e limpo.*/
+     --cor-azulGelo: #66FCF1; /*Para títulos secundários ou para destacar seções específicas.*/
+     
 }
 
 /*#################################################
@@ -65,12 +68,22 @@ h2{
     font-family: var(--font-poppins);
     font-size: 1.5em;
     font-weight: 400;
+    padding: 10px;
+}
+h3{
+    font-family: var(--font-poppins);
+    color: var(--cor-brancoNeve);
+    font-size: 1.3em;
+    font-weight: 400;
+    padding: 10px; 
 }
 p{
     font-family: var(--font-inter);
     font-size: 1em;
     font-weight: 200;
     color: var(--cor-cinzaClaro);
+    text-indent: 1em;
+    padding: 10px;
 }
 pre{
     border: 1px solid var(--cor-azulEletrico);
