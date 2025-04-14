@@ -1,11 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Box Model</title>
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
+    <header>
+        <h1>Box Model</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">INICIO</a></li>
+                <li><a href="../css3.html">CSS3</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article>
+            <h2>Box Model - O que é?</h2>
+            <p>
+                O Box Model é a forma como o CSS representa visualmente todos os elementos HTML. Cada elemento é visto como uma caixa retangular composta por quatro camadas principais.
+            </p>
+            <h2>Estrutura do Box Model (de fora para dentro)</h2>
+            <img src="../css3/img-css3/boxmodel01.webp" alt="">
+            <h3>Margin</h3>
+            <ul>
+                <li>Espaço externo da caixa</li>
+                <li>Separa o elemento de outros elementos</li>
+                <li>Exemplo: <pre>margin: 10px;</pre></li>
+            </ul>
+            <h3>Border</h3>
+            <ul>
+                <li>Linha que envolve o padding e o conteúdo</li>
+                <li>Pode ter cor, estilo e espessura</li>
+                <li>Exemplo: <pre>border: 2px solid black;</pre></li>
+            </ul>
+            <h3>Padding</h3>
+            <ul>
+                <li>Espaço interno entre o conteúdo e a borda</li>
+                <li>Aumenta o “respiro” dentro da caixa</li>
+                <li>Exemplo: <pre>padding: 20px;</pre></li>
+            </ul>
+            <h3>Content</h3>
+            <ul>
+                <li>O conteúdo real (texto, imagem, etc)</li>
+                <li>Exemplo: <pre>width: 200px; height: 100px;</pre></li>
+            </ul>
+            <h3>Dica importante: box-sizing</h3>
+            <p>Por padrão, o tamanho total da caixa = content + padding + border</p>
+            <p>Se quiser que o width e height incluam tudo (padding + border), use: <pre>box-sizing: border-box;</pre></p>
+        </article>
+
+    </main>
+    
     
 </body>
 </html>
