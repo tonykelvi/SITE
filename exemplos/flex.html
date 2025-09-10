@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Exemplo Flex</title>
+<style>
+  .container {
+    display: flex;
+    border: 2px solid black;
+    width: 500px;
+    height: 100px;
+    gap: 10px;
+  }
+
+  .item {
+    background-color: coral;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .item1 { flex: 1 1 100px; }  /* grow 1, shrink 1, base 100px */
+  .item2 { flex: 2 1 50px; }   /* grow 2, shrink 1, base 50px */
+  .item3 { flex: 1 0 150px; }  /* grow 1, shrink 0, base 150px */
+</style>
+</head>
+<body>
+
+<h3>Exemplo de uso da propriedade flex</h3>
+<div class="container">
+  <div class="item item1">Item 1</div>
+  <div class="item item2">Item 2</div>
+  <div class="item item3">Item 3</div>
+</div>
+<p>
+    <img src="./img/flex.PNG" alt="">
+</p>
+</body>
+</html>

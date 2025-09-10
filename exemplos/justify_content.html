@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Exemplo Justify-Content</title>
+<style>
+  .container {
+    display: flex;
+    border: 2px solid black;
+    margin-bottom: 20px;
+    height: 100px;
+    background-color: #f0f0f0;
+  }
+
+  .item {
+    width: 50px;
+    height: 50px;
+    background-color: coral;
+  }
+
+  .flex-start { justify-content: flex-start; }   /* padrão */
+  .flex-end { justify-content: flex-end; }
+  .center { justify-content: center; }
+  .space-between { justify-content: space-between; }
+  .space-around { justify-content: space-around; }
+  .space-evenly { justify-content: space-evenly; }
+</style>
+</head>
+<body>
+
+<h3>justify-content: flex-start (padrão)</h3>
+<div class="container flex-start">
+  <div class="item"></div>
+  <div class="item" style="background-color: lightblue;"></div>
+  <div class="item" style="background-color: lightgreen;"></div>
+  <div class="item" style="background-color: yellow;"></div>
+</div>
+
+<h3>justify-content: flex-end</h3>
+<div class="container flex-end">
+  <div class="item"></div>
+  <div class="item" style="background-color: lightblue;"></div>
+  <div class="item" style="background-color: lightgreen;"></div>
+  <div class="item" style="background-color: yellow;"></div>
+</div>
+
+<h3>justify-content: center</h3>
+<div class="container center">
+  <div class="item"></div>
+  <div class="item" style="background-color: lightblue;"></div>
+  <div class="item" style="background-color: lightgreen;"></div>
+  <div class="item" style="background-color: yellow;"></div>
+</div>
+
+<h3>justify-content: space-between</h3>
+<div class="container space-between">
+  <div class="item"></div>
+  <div class="item" style="background-color: lightblue;"></div>
+  <div class="item" style="background-color: lightgreen;"></div>
+  <div class="item" style="background-color: yellow;"></div>
+</div>
+
+<h3>justify-content: space-around</h3>
+<div class="container space-around">
+  <div class="item"></div>
+  <div class="item" style="background-color: lightblue;"></div>
+  <div class="item" style="background-color: lightgreen;"></div>
+  <div class="item" style="background-color: yellow;"></div>
+</div>
+
+<h3>justify-content: space-evenly</h3>
+<div class="container space-evenly">
+  <div class="item"></div>
+  <div class="item" style="background-color: lightblue;"></div>
+  <div class="item" style="background-color: lightgreen;"></div>
+  <div class="item" style="background-color: yellow;"></div>
+</div>
+
+<p>
+    <img src="./img/justify_content.PNG" alt="">
+</p>
+
+</body>
+</html>

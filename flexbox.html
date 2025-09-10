@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FlexBox</title>
+    <style>
+      .container {
+        display: flex;
+        /*transforma um container em um Flex Container.
+        Isso muda completamente o comportamento dos elementos filhos, 
+        que passam a ser chamados de flex items.  */
+        align-content: ;
+      }
+      .quadrado {
+        height: 200px;
+        width: 200px;
+      }
+
+      a {
+        text-decoration: none;
+      }
+      main {
+        padding-top: 5em;
+        margin-left: 5em;
+      }
+      p {
+        margin: 2em;
+      }
+      .texto_destaque {
+        font-style: italic;
+        color: red;
+      }
+      .texto_destaque2 {
+        color: blue;
+        margin-left: 8em;
+      }
+      .texto_destaque3 {
+        color: green;
+        margin-left: 3em;
+      }
+      a {
+        text-decoration: none;
+        font-size: 24px;
+        color: white;
+        background-color: grey;
+        padding: 10px 20px;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!-- O container é a o elemento pai, voce deve aplicar o flexbox nele 
+       pra que tenha efeito nos elementos filhos -->
+      <div style="background-color: aqua" class="quadrado"></div>
+      <div style="background-color: red" class="quadrado"></div>
+      <div style="background-color: blueviolet" class="quadrado"></div>
+      <div style="background-color: brown" class="quadrado"></div>
+    </div>
+    <main>
+      <h1>Tutorial</h1>
+      <p>
+        <b class="texto_destaque">Box Model</b> → estrutura interna do elemento. <br>
+        <b class="texto_destaque">Container</b> → elemento que envolve outros elementos. <br>
+        <b class="texto_destaque">Display</b> → define como esse container (ou elemento) se comporta no layout.
+      </p>
+      <p>
+        Link:
+        <a
+          target="_blank"
+          href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/"
+          >Tutorial para FlexBox</a
+        >
+      </p>
+      <p>
+        Link:
+        <a target="_blank" href="https://tonykelvi.github.io/SITE/">Meu site</a>
+      </p>
+
+      <p>
+        <b class="texto_destaque">display</b> é a forma como o navegador
+        organiza e apresenta cada elemento na tela. <br />
+        <br />
+        <b class="texto_destaque2">block</b> → O elemento ocupa toda a largura
+        disponível e sempre começa em uma nova linha. <br />
+        <b class="texto_destaque2">inline</b> → O elemento fica na mesma linha
+        que os outros e só ocupa o espaço do seu conteúdo. <br />
+        <b class="texto_destaque2">inline-block</b> → Mistura dos dois: fica na
+        mesma linha, mas permite definir largura e altura. <br />
+        <b class="texto_destaque2">flex</b>→ Transforma o elemento em flex
+        container, permitindo organizar os filhos com Flexbox. <br />
+        <b class="texto_destaque2">grid</b>→ Transforma o elemento em grid
+        container, permitindo organizar os filhos em linhas e colunas. <br />
+        <b class="texto_destaque2">none</b>→ Faz o elemento sumir da tela (não
+        ocupa espaço). <br />
+        <br />
+        <b class="texto_destaque3"> Observação:</b> O valor padrão do display
+        depende da tag HTML: <br />
+        <b class="texto_destaque2"> Elementos de bloco (block elements) </b> →
+        padrão é display: block; Ex: div, p, h1, section, header. <br />
+        <b class="texto_destaque2">Elementos em linha (inline elements)</b> →
+        padrão é display: inline; Ex: span, a, strong, em.
+      </p>
+      <h2>Flexbox</h2>
+
+      <h3>Propriedades para o pai (flex container)</h3>
+
+      <!-- flex-direction -->
+      <p>
+        <b class="texto_destaque">flex-direction</b> controla se os elementos
+        ficam lado a lado ou um embaixo do outro, e também a ordem em que
+        aparecem. <br />
+        <b class="texto_destaque2">row (padrão)</b>→ os itens ficam em linha, da
+        esquerda para a direita. <br />
+        <b class="texto_destaque2">row-reverse</b>→ os itens ficam em linha, mas
+        da direita para a esquerda. <br />
+        <b class="texto_destaque2">column</b>→ os itens ficam em coluna, de cima
+        para baixo. <br />
+        <b class="texto_destaque2">column-reverse</b>→ os itens ficam em coluna,
+        mas de baixo para cima. <br />
+        <br />
+        <a href="./exemplos/flex_direction.html">Flex-direction na prática</a>
+      </p>
+      <!-- justify-content -->
+      <p>
+        <b class="texto_destaque">justify-content</b> controla a distribuição
+        horizontal (ou vertical, dependendo do flex-direction) dos elementos
+        dentro de um container flexível. <br />
+        <b class="texto_destaque2">flex-start (padrão)</b>→ itens alinhados no
+        início. <br />
+        <b class="texto_destaque2">flex-end</b>itens alinhados no final. <br />
+        <b class="texto_destaque2">center</b> → itens centralizados.<br />
+        <b class="texto_destaque2">space-between</b>→ espaço igual entre os
+        itens, sem espaço nas bordas. <br />
+        <b class="texto_destaque2">space-around</b>→ espaço igual ao redor de
+        cada item.<br />
+        <b class="texto_destaque2">space-evenly</b>→ espaço totalmente igual
+        entre os itens e nas bordas.<br />
+        <br />
+        <a href="./exemplos/justify_content.html">Justify-content na prática</a>
+      </p>
+      <!-- align-items -->
+      <p>
+        <b class="texto_destaque">align-items</b> define como os elementos ficam
+        alinhados verticalmente (quando flex-direction: row) ou horizontalmente
+        (quando flex-direction: column). <br />
+        <b class="texto_destaque2">stretch (padrão)</b> → os itens esticam para
+        ocupar toda a altura (ou largura, se flex-direction: column). <br />
+        <b class="texto_destaque2">flex-start</b> → alinha os itens ao início do
+        eixo cruzado. <br />
+        <b class="texto_destaque2">flex-end</b>→ alinha os itens ao final do
+        eixo cruzado.<br />
+        <b class="texto_destaque2">center</b>→ centraliza os itens no eixo
+        cruzado. <br />
+        <b class="texto_destaque2">baseline</b> → alinha os itens pela linha de
+        base do texto.<br />
+        <br />
+        <a href="./exemplos/align_items.html"> Align-items na prática</a>
+      </p>
+      <!-- align-content -->
+      <p>
+        <b class="texto_destaque">align-content</b> align-content alinha grupos
+        de linhas dentro do container flex. ⚠️ Ele só funciona se houver mais de
+        uma linha de itens (com flex-wrap: wrap;). <br />
+        <b class="texto_destaque2">stretch (padrão)</b> → as linhas se esticam
+        para ocupar todo o espaço disponível.<br />
+        <b class="texto_destaque2">flex-start</b> → todas as linhas ficam juntas
+        no início. <br />
+        <b class="texto_destaque2">flex-end</b> → todas as linhas ficam juntas
+        no final. <br />
+        <b class="texto_destaque2">center</b> → todas as linhas ficam
+        centralizadas. <br />
+        <b class="texto_destaque2">space-between</b>→ espaço igual entre as
+        linhas, sem espaço nas bordas.<br />
+        <b class="texto_destaque2">space-around</b>→ espaço igual ao redor de
+        cada linha.<br />
+        <b class="texto_destaque2">space-evenly</b>→ espaço totalmente igual
+        entre linhas e bordas.<br />
+        <b class="texto_destaque2"></b> <br />
+        <br />
+        <a href="./exemplos/align_content.html"> Align-content na prática</a>
+      </p>
+
+      <h3>Propriedades para crianças (itens flexíveis)</h3>
+
+      <!-- Order -->
+
+      <p>
+        <b class="texto_destaque">order</b> É uma propriedade do Flexbox que
+        permite alterar a ordem de exibição de um item filho, sem precisar mudar
+        a ordem no HTML. <br />
+        Por padrão, os itens flexíveis são dispostos na ordem de origem. No
+        entanto, a <i>order</i> propriedade controla a ordem em que eles
+        aparecem no contêiner flexível. <br />
+        <br />
+        <a href="./exemplos/order.html">Order</a>
+      </p>
+
+      <!-- flex-grow -->
+
+      <p>
+        <b class="texto_destaque"> flex-grow:</b> controla quanto cada item
+        aumenta de tamanho em relação aos outros dentro de um container flex.
+        <br />
+        <b class="texto_destaque2">0 (padrão)</b> → o item não cresce. <br />
+        <b class="texto_destaque2">1</b> → o item cresce proporcionalmente ao
+        espaço disponível. <br />
+        <b class="texto_destaque2">2,3...</b> → cresce mais rápido, proporcional
+        ao valor em relação aos outros itens. <br />
+        <br />
+        <a href="./exemplos/flex_grow.html">flex-grow</a>
+      </p>
+
+      <!-- flex-shrink -->
+
+      <p>
+        <b class="texto_destaque">flex-shrink</b> controla como os itens
+        diminuem de tamanho quando o container não tem espaço suficiente.<br />
+        <b class="texto_destaque2">0</b> → o item não encolhe (permanece do
+        tamanho original). <br />
+        <b class="texto_destaque2">1 (padrão) </b>→ o item pode encolher
+        proporcionalmente aos outros itens.<br />
+        <b class="texto_destaque2">Valores maiores</b>o item encolhe mais rápido
+        que os outros.<br />
+        <br />
+        <a href="./exemplos/flex_shrink.html">flex-shrink</a>
+      </p>
+
+      <!-- flex-basis -->
+
+      <p>
+        <b class="texto_destaque">flex-basis</b> define o tamanho inicial de um
+        item dentro de um container flex, servindo como base para os ajustes de
+        crescimento (flex-grow) ou encolhimento (flex-shrink).<br />
+        Pode ser um valor em pixels, porcentagem, ou auto: <br />
+        <b class="texto_destaque2">auto (padrão)</b> → usa o tamanho natural do
+        item.<br />
+        <b class="texto_destaque2">100px, 30%</b>→ define um tamanho fixo
+        inicial antes do flex-grow ou flex-shrink entrarem em ação.<br />
+        Funciona como largura ou altura inicial, dependendo do flex-direction:
+        <br />
+        <b class="texto_destaque2">row → flex-basis</b> define largura
+        inicial.<br />
+        <b class="texto_destaque2">column → flex-basis</b> define altura
+        inicial. <br />
+        <br />
+        <a href="./exemplos/flex_basis.html">flex-basis</a>
+      </p>
+
+      <!-- flex -->
+
+      <p>
+        <b class="texto_destaque">flex</b> é uma forma prática de definir
+        crescimento, encolhimento e tamanho inicial de um item flex em apenas
+        uma linha de código.<br />
+        <b class="texto_destaque2"></b> <br />
+        <b class="texto_destaque2"></b> <br />
+        <br />
+        <a href="./exemplos/img/flex.PNG">flex</a>
+      </p>
+
+      <p>
+        <b class="texto_destaque"></b> <br />
+        <b class="texto_destaque2"></b> <br />
+        <b class="texto_destaque2"></b> <br />
+      </p>
+    </main>
+  </body>
+</html>
